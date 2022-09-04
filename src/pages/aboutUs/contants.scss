@@ -1,0 +1,54 @@
+.help__container {
+    background-image: url(../../assets/find/5.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 131px 0 134px;
+    .contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .contacts__descr {
+            .tittle , .description {
+                text-align: left;
+                color: #FFFFFF;
+                max-width: 766px;
+            }
+            .sup {
+                margin-top: 35px;
+            }
+        }
+    }
+    .contacts__number {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        button {
+            width: 284px;
+            height: 80px;
+            background-color: #FFFFFF;
+            padding: 23px 34px;
+            font-family: 'Space Grotesk';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 33px;
+            color: #232323;
+            border: none;
+
+            a {
+                text-decoration: none;
+            }
+        }
+        span {
+            font-family: 'Space Grotesk';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 33px;
+            color:#FFFFFF;
+            margin-top: 28px;
+        }
+    }
+}

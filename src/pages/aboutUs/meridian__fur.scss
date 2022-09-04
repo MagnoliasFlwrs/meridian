@@ -1,0 +1,49 @@
+.meridian__fur {
+    width: 100%;
+    padding: 100px 0 256px;
+    background-image: url(./assets/640Pink-S_15\ 1.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .fur__info {
+        max-width: 1014px;
+        margin: 0 auto;
+
+        h2 {
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 65px;
+            line-height: 82px;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        p {
+            font-family: 'Space Grotesk';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 25px;
+            line-height: 40px;
+            text-align: center;
+            color: #FFFFFF;
+            margin: 30px 0 70px;
+        }
+        button {
+            width: 498px;
+            height: 97px;
+            background-color: rgba(181, 130, 105, 1);
+            border: none;
+            display: block;
+            margin: 0 auto;
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 25px;
+            line-height: 32px;
+            letter-spacing: 0.265em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+        }
+    }
+}

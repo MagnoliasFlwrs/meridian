@@ -1,0 +1,30 @@
+.about__us {
+    width: 100%;
+    padding: 100px 0;
+
+    .content {
+        display: flex;
+        justify-content: space-between;
+
+        .about__descr {
+            max-width: 757px;
+            h2 {
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 65px;
+                line-height: 72px;
+                color: #000000;
+                margin: 72px 0 20px;
+            }
+            p {
+                font-family: 'HK Grotesk';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 36px;
+                color: #000000;
+            }
+        }
+    }
+}
