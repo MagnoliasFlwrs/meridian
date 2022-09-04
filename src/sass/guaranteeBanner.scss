@@ -1,0 +1,35 @@
+.guarantee__banner {
+    width: 100%;
+    padding: 0 0 100px 0;
+
+    .guarantee__box {
+        padding: 77px 125px;
+        background-color: rgba(58, 80, 65, 1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .guarantee {
+            &:nth-child(2) {
+                padding: 0 207px;
+                border-left: 2px solid rgba(255, 255, 255, 0.3);
+                border-right: 2px solid rgba(255, 255, 255, 0.3);
+            }
+            svg {
+                display: block;
+                margin: 0 auto 28px;
+            }
+            p {
+                font-family: 'HK Grotesk';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 33px;
+                text-align: center;
+                color: #FFFFFF;
+                margin-top: 18px;
+            }
+        }
+
+    }
+}

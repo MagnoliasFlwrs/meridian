@@ -1,0 +1,138 @@
+.collection {
+    width: 100%;
+    padding: 50px 0;
+
+    .collection__head {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+
+        .collection__tittle {
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 55px;
+            line-height: 69px;
+            text-transform: capitalize;
+            color: #272727;
+        }
+        .sort__buttons {
+            display: flex;
+            width: 300px;
+            justify-content: space-between;
+            .min__sort , .max__sort {
+                width: 150px;
+                padding: 5px;
+                font-family: 'Space Grotesk';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 25px;
+                color: #272727;
+                text-align: center;
+                border: none;
+            }
+            .min__sort {
+                margin-right: 20px;
+            }
+        }
+    }
+    .collection__wrapper {
+        display: flex;
+        border: 1px solid #888887;
+        padding: 25px;
+
+        .filters {
+            width: 20%;
+            h3 {
+                font-family: 'Space Grotesk';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 33px;
+                color: #272727;
+
+                div {
+                    margin-bottom: 20px;
+                    &:first-child {
+                        margin-top: 20px;
+                    }
+                    label {
+                        font-family: 'Space Grotesk';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 25px;
+                        line-height: 33px;
+                        color: #888887;
+                    }
+                }
+                .clear__button {
+                    width: 80%;
+                    padding: 20px;
+                    margin: 30px auto;
+                    font-family: 'Space Grotesk';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 25px;
+                    line-height: 33px;
+                    color: #888887;
+                    border: none;
+
+                    &:hover {
+                        box-shadow: 6px 0px 15px 7px rgba(34, 60, 80, 0.2);
+                    }
+                }
+            }
+        }
+        .collection__box {
+            width: 80%;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+            .product__card {
+                width: 350px;
+                padding: 20px 10px;
+                margin-bottom: 20px;
+                display: flex;
+                flex-direction: column;
+
+                &:hover {
+                    box-shadow: -2px -3px 19px 16px rgba(34, 60, 80, 0.2);
+                }
+
+                .product__image {
+                    width: 100%;
+                    height: 180px;
+                    object-fit: contain;
+                }
+                .product__title {
+                    font-family: 'Space Grotesk';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 25px;
+                    line-height: 33px;
+                    color: #888887;
+                    margin: 10px 0 0;
+                }
+                .product__category {
+                    font-family: 'Space Grotesk';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 25px;
+                    line-height: 33px;
+                    margin: 5px 0;
+                }
+                .product__price {
+                    font-family: 'Space Grotesk';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 25px;
+                    line-height: 33px;
+                    color: #FF5B5B;
+                }
+            }
+
+        }
+    }
+}

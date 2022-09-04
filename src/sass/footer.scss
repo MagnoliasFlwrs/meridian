@@ -1,0 +1,122 @@
+.footer {
+    background-color: rgba(35, 35, 35, 1);
+    padding: 56px 0 48px;
+    .content {
+        .footer__logo {
+            padding-bottom: 36px;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 1);
+        }
+        .footer__nav {
+            padding-top: 53px;
+            .footer__wrap {
+                display: flex;
+                justify-content: space-between;
+                .office {
+                    max-width: 330px;
+                    .description {
+                        color:rgba(255, 255, 255, 0.58);
+                        margin-bottom: 24px;
+                        text-align: left;
+                    }
+                    p {
+                        font-family: 'Space Grotesk';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 25px;
+                        line-height: 42px;
+                        color: rgba(255, 255, 255, 0.58);
+                    }
+                    .office__phone {
+                        margin-top: 38px;
+                        .description {
+                            color:rgba(255, 255, 255, 0.58);
+                            margin-left: 5px;
+                        }
+                    }
+                    .office__post {
+                        margin-top: 15px;
+                        .description {
+                            color:rgba(255, 255, 255, 0.58);
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                .footer__navigation {
+                    display: flex;
+                    justify-content: space-between;
+                    .product , .help , .join {
+                        max-width: 405px;
+                        display: flex;
+                        flex-direction: column;
+                        &:not(:last-child) {
+                            margin-right: 75px;
+                        }
+                        .description {
+                            color: #ffffff;
+                            text-align: left;
+                            margin-bottom: 24px;
+                        }
+                        .input__wrapper {
+                            margin-top: 55px;
+                            margin-bottom: 20px;
+                            input {
+                                width: calc(100% - 77px);
+                                height: 67px;
+                                border: none;
+                                background-color: transparent;
+                                border-bottom: 1px solid rgba(255, 255, 255, 1);
+
+                                &::placeholder {
+                                    font-family: 'Space Grotesk';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 25px;
+                                    line-height: 33px;
+                                    color: #FFFFFF;
+                                    mix-blend-mode: normal;
+                                    opacity: 0.5;
+                                }
+                            }
+                            button {
+                                width: 67px;
+                                height: 67px;
+                                padding: 26px;
+                                background-color: #FFFFFF;
+                                border-radius: 10.6667px 10.6667px 0px 0px;
+                            }
+                        }
+                    }
+                }
+            }
+            .social {
+                padding: 66px 0 34px;
+                display: flex;
+                justify-content: space-between;
+                .policy {
+                    a {
+                        font-family: 'Outfit';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 25px;
+                        line-height: 32px;
+                        letter-spacing: -0.272727px;
+                        color: #FFFFFF;
+                        text-decoration: none;
+
+                        &:not(:last-child) {
+                            margin-right: 22px;
+                        }
+                    }
+                }
+                .soc {
+                    a {
+                        &:not(:last-child) {
+                            margin-right: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

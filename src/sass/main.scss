@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url(./itc-slider.css);
+@import url(./header.scss);
+@import url(./furniture_main.scss);
+@import url(./collections.scss);
+@import url(./guaranteeBanner.scss);
+@import url(./readyProduct.scss);
+@import url(./quality_banner.scss);
+@import url(./unique.scss);
+@import url(./homeAbout.scss);
+@import url(./find_us.scss);
+@import url(./footer.scss);
+
+
+
+.content {
+    max-width: calc(1720px + 16px*2);
+    padding: 0 16px;
+    margin: 0 auto;
+}
+.subtittle {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.265em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.tittle {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 75px;
+    line-height: 94px;
+    color: #161616;
+    text-align: center;
+}
+.description {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    color: #161616;
+    text-align: center;
+}
+.collection__box {
+    .first__line {
+        display: flex;
+        justify-content: space-between;
+        .big__img , .collection {
+            width: 64%;
+            position: relative;
+            img {
+               width: 100%;
+               display: block;
+               object-fit: cover;
+            }
+            span {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 96px;
+                background-color: rgba(99, 106, 106, 1);
+                padding: 32px 0;
+            }
+        }
+        .collection {
+            width: 33%;
+        }
+    }
+    .second__line {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        .collection {
+            width: 32%;
+            position: relative;
+            img {
+               width: 100%;
+               display: block;
+               object-fit: cover;
+            }
+            span {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: 96px;
+                background-color: rgba(99, 106, 106, 1);
+                padding: 32px 0;
+            }
+        }
+    }
+
+}
+.footer__link {
+    text-decoration: none;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 33px;
+    color: rgba(255, 255, 255, 0.58);
+    text-align: left;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}

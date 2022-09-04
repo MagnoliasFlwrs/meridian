@@ -1,0 +1,60 @@
+.home__about {
+    width: 100%;
+    padding: 100px 0;
+    .home__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        article {
+            width: calc(100% - 705px);
+            h2 {
+                font-family: 'Outfit';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 75px;
+                line-height: 118px;
+                color: #161616;
+            }
+            p {
+                max-width: 847px;
+                font-family: 'HK Grotesk';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 25px;
+                line-height: 43px;
+                color: #000000;
+                margin: 70px 0 85px;
+            }
+            .stars {
+                display: flex;
+                align-items: center;
+                svg {
+                    margin-right: 34px;
+                }
+                span {
+                    color: #000000;
+                }
+            }
+        }
+        .slider {
+            max-width: 680px;
+            .slider__wrapper {
+                overflow: hidden;
+                width: 100%;
+                margin: 0 auto;
+
+                .slider__items {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .slider__item {
+                        flex: 0 0 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+
+    }
+}
