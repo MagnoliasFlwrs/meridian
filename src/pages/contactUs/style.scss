@@ -1,0 +1,65 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url(./header.scss);
+@import url(./footer.scss);
+@import url(./contants.scss);
+@import url(./contactForm.scss);
+.content {
+    max-width: calc(1720px + 16px*2);
+    padding: 0 16px;
+    margin: 0 auto;
+}
+.subtittle {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 0.265em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.tittle {
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 75px;
+    line-height: 94px;
+    color: #161616;
+    text-align: center;
+}
+.description {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 33px;
+    color: #161616;
+    text-align: center;
+}
+.footer__link {
+    text-decoration: none;
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 33px;
+    color: rgba(255, 255, 255, 0.58);
+    text-align: left;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+.contact__banner {
+    width: 100%;
+    background-image: url(./MishaGrey-Q_2\ 2.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
