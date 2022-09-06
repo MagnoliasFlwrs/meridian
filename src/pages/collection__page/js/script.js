@@ -10,14 +10,12 @@ const clearButton = document.querySelector('.clear__button');
 const minSort = document.querySelector('.min__sort');
 const maxSort = document.querySelector('.max__sort');
 
-document.addEventListener('DOMContentLoaded', () => {
-    fetch('https://fakestoreapi.com/products')
-    .then((Response) => Response.json())
-    .then((base) => {
-        productList = base;
-        productListCopy = [...productList]
-        renderProductList();
-    })
+document.addEventListener('DOMContentLoaded', async () => {
+    let list =  await fetch('https://fakestoreapi.com/products')
+    list = await list.json()
+    productList = list;
+    productListCopy = [...productList]
+    renderProductList();
     checkboxList.forEach(item => {
         item.addEventListener('change', ({ target }) => {
             filterProductList(target.name)
