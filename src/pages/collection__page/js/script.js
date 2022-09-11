@@ -9,6 +9,8 @@ const checkboxList = document.querySelectorAll('.filters .input');
 const clearButton = document.querySelector('.clear__button');
 const minSort = document.querySelector('.min__sort');
 const maxSort = document.querySelector('.max__sort');
+const modalWrapper = document.querySelector('.modal__wrapper');
+const modalContainer = document.querySelector('.modal__container');
 
 document.addEventListener('DOMContentLoaded', async () => {
     let list =  await fetch('https://fakestoreapi.com/products')
@@ -58,8 +60,15 @@ function filterProductList(value) {
 }
 function clearFilters() {
     productListCopy = [...productList];
+    let checkboxes = document.querySelectorAll(".input");
+    for(let i = 0; i < checkboxes.length; i++){
+        if (checkboxes[i].checked == true) {
+            checkboxes[i].checked = false;
+        }
+    }
     renderProductList();
 }
+
 clearButton.addEventListener('click',() => {
     clearFilters();
 })
@@ -77,4 +86,20 @@ maxSort.addEventListener('click', () => {
     })
     productListCopy.sort((a , b) => a.price < b.price ? 1 : -1)
     renderProductList()
+})
+
+function openModal() {
+    modalWrapper.style.display = "flex";
+}
+
+modalWrapper.addEventListener("click", ({ target }) => {
+    if (!target.classList.contains("modal__container")) {
+      modalWrapper.style.display = "none";
+    }
+});
+
+collectionBox.addEventListener('click', ({ target }) => {
+    if (target.classList.contains('product__card')) {
+        openModal()
+    }
 })
